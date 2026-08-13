@@ -26,7 +26,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .tmp/build   # this is the folder Squoosh currently builds into
+          path: build   # this is the folder Squoosh currently builds into
 
   deploy:
     needs: build
